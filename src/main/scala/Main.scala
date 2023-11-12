@@ -9,7 +9,7 @@ object Main extends App {
     Kamon.shutdown()
   }
 
-  private val requestCounter = Kamon.metrics.counter("request")
+  private val requestCounter = Kamon.metrics.counter("sharaku_web.counter.request")
 
   for(i <- 1 to 10) {
     println(s"i: $i")
