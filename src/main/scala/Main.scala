@@ -16,6 +16,7 @@ object Main extends App {
     requestCounter.increment(101912)
     Thread.sleep(500)
   }
-  val stopFuture = Kamon.shutdown()
+
+  // val stopFuture = Kamon.shutdown()
   println("done")
 }
